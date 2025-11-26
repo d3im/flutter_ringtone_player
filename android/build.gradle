@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdk = flutter.compileSdkVersion
 
     if (project.android.hasProperty("namespace")) {
         namespace "io.inway.ringtone.player"
